@@ -1,0 +1,7 @@
+{
+  "name": "Sarkari AI Pro",
+  "description": "A feature-rich, official-style government results portal with AI-powered post generation, 6-column layout, and comprehensive admin controls.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
