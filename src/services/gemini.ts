@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { Post, CategoryType } from "../types";
 
 // Always use named parameter and direct access to process.env.API_KEY
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenerativeAI(import.meta.env.VITE_API_KEY || "");
 
 export const generatePostFromTitle = async (title: string, category: CategoryType): Promise<Partial<Post>> => {
   const model = 'gemini-3-flash-preview';
